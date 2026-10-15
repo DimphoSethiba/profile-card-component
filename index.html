@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 0.6875rem;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: hsl(185, 75%, 39%);
+      font-family: 'Kumbh Sans', Arial;
+    }
+
+    .profile-card {
+      background-color: white;
+      position: relative;
+      border-radius: 15px;
+    }
+
+    .card-header img {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    .profile-info {
+      padding: 80px 0 25px 0;
+      text-align: center;
+    }
+
+    .profile-name {
+      font-size: 18px;
+
+    }
+
+    .profile-name span {
+      color: hsl(227, 10%, 46%);
+      font-weight: 400;
+
+    }
+
+    .location {
+      color: hsl(227, 10%, 46%);
+
+      font-size: 13px;
+      font-weight: 400;
+      margin-top: 8px;
+    }
+
+    .profile-picture {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      width: 100px;
+    }
+
+    .stats {
+      display: inline-block;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .stats h2 {
+      font-size: 18px;
+    }
+
+    .stats p {
+      font-size: 10px;
+      color: hsl(227, 10%, 46%);
+      letter-spacing: 2px;
+      margin-top: 4px;
+    }
+
+    .card-stats {
+      display: flex;
+      justify-content: space-evenly;
+      border-top: 1px solid hsl(225, 10%, 92%);
+      padding: 20px 0px;
+
+    }
+
+    @media (max-width) {
+      body {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="profile-card">
+    <div class="card-header">
+      <img src="images/bg-pattern-card.svg" alt="header background">
+    </div>
+    <img class="profile-picture" src="images/image-victor.jpg" alt="Victor Crest profile picture">
+    <section class="profile-info">
+      <h1 class="profile-name">Victor Crest <span>26</span></h1>
+      <p class="location">London</p>
+    </section>
+    <div class="card-stats">
+      <div class="stats">
+        <h2>80K</h2>
+        <p>Followers</p>
+      </div>
+      <div class="stats">
+        <h2>803K</h2>
+        <p>Likes</p>
+      </div>
+      <div class="stats">
+        <h2>1.4K</h2>
+        <p>Photos</p>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Dimpho Sethiba</a>.
+  </footer>
+</body>
+
+</html>
